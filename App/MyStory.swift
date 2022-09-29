@@ -4,7 +4,9 @@ See the License.txt file for this sample’s licensing information.
 
 import SwiftUI
 
-let story = Story(pages: [
+let story = Story.fromJSON(named: "modelsdata")!
+
+let story2 = Story(name: "recipes", pages: [
     StoryPage( // 0 - Homepage
         
         """
@@ -272,7 +274,7 @@ let story = Story(pages: [
     StoryPage( // 27 - appetizers American buffalo wings
         """
         
-        🍗 Buffalo Chicken Wings 🍗
+        Buffalo Chicken Wings
         
         ----------------------------------------------
         
